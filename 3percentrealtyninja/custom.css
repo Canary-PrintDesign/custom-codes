@@ -1,0 +1,124 @@
+/* Realtor contact/info boxes full-width */
+@media screen and (max-width: 479px) {
+  .nested, .column1_2, .column2_2, body.index .column1_2,
+  body.index .column2_2, body.blog .column1_2,
+  body.blog .column2_2, #header #contact_button .nested,
+  body.index .latest_blog_entries, body.index #contact_info,
+  .listview_item_details, table, table.listings,
+  table.listing_details_table_hd, #listing_contactform_info,
+  body.listing_details table.details, .paging_container,
+  body.blog #page_title, .column1_2, body.blog .column1_2,
+  #sd_template #map, #sd_template #aerial_view {
+    width: 100%;
+  }
+}
+
+/* Feature Boxes full-width */
+@media screen and (max-width: 479px) {
+  body.index .home_feat_box {
+    width: 100%;
+    margin:0 0 20px 0;
+  }
+}
+
+/* Move HighRidge Homes logo to the RIGHT */
+#identity {
+  padding-top: 10px;
+}
+.header2 a:nth-child(2) {
+  float: right;
+}
+
+/* Thicker navigation */
+#nav li a {
+  font-weight: bold; padding: 19px 16px;
+}
+
+/* Change background color */
+#wrapper {
+  background-color: #f5f1eb;
+}
+body {
+  color: #231f20;
+}
+a {
+  color: #aa540f;
+}
+
+/* Move 3 "featured" boxes down to show image better */
+body.index #home_feat_box_container {
+  margin-top: -130px;
+}
+
+/* and move it down again on smaller screens */
+@media screen and (max-width: 479px) {
+  body.index #home_feat_box_container {
+    margin-top: 0px; }
+}
+
+/* Contact Buttons HIDE */
+#listing_detail_cta_container, #contact_button, #form, .form, .email_subscribe {
+  display: none;
+}
+
+/* Eliminate ugly white 'spacer' bars */
+#listings_bar {
+  margin-bottom: 0px; background-image: none;
+}
+body.index .column2_2 {
+  padding: 0px;
+
+body.index .column1_2 {
+  background-image: none;
+}
+
+/* Listings Data Table */
+body.listing_details table.details tr.even td, body.listing_details table.details td, body.listing_details .listing_actions, body.listing_details .listing_attachments, body.listing_details .listing_openhouses {
+  background-color: transparent;
+}
+
+/* This fixes a weird issue on listings pages with the tables */
+td {
+  overflow: hidden !important;
+}
+
+/*  Agents Page */
+#agent_search_form, #agentsearchletters {
+  display: none;
+}
+
+/* Contact Form Break-Points  */
+@media (max-width: 960px) {
+  #wufoo-zi7wps00p2epbj {
+    float: left; width: 100%;
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 960px) {
+  #wufoo-zi7wps00p2epbj {
+    float: left; width: 75%;
+  }
+}
+
+/* Remove Ninja Form from Contact Page */
+body.static .column1_2 form {
+  display: none;
+}
+
+/* Change some font sizes of...things? */
+span.brokerage.org {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+/* Hide 'things' in the footer (and change the colors) */
+#footer {
+  background-color: #231f20;
+}
+#footer_nav li a {
+  color: #f5f1eb;
+}
+#footer #realty_ninja a {
+  color: #231f20;
+}
